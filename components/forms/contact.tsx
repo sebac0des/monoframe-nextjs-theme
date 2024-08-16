@@ -19,12 +19,14 @@ import {
     FormLabel,
     FormMessage,
 } from "@/components/ui/form"
+
+// Utils
 import { cn } from "@/lib/utils"
 
 
 const formSchema = z.object({
-    fullname: z.string().min(2).max(50),
-    email: z.string().email(),
+    fullname: z.string().min(5, { message: 'Ingresa tu nombre completo' }).max(50),
+    email: z.string({ message: 'Ingresa un email valido' }).email({ message: 'Ingresa un email valido' }),
 })
 
 export function ContactForm() {
@@ -36,8 +38,9 @@ export function ContactForm() {
         },
     })
 
-    
+
     function onSubmit(values: z.infer<typeof formSchema>) {
+        // Use your database service here
         console.log(values)
     }
 
@@ -52,10 +55,10 @@ export function ContactForm() {
                         <FormLabel className={cn(secondary.className)}>Nombre completo</FormLabel>
                         <FormControl>
                             <Input
-                            autoComplete='off'
-                            className={cn(secondary.className)} placeholder="Ingresa tu nombre completo..." {...field} />
+                                autoComplete='off'
+                                className={cn(secondary.className)} placeholder="Ingresa tu nombre completo..." {...field} />
                         </FormControl>
-                        <FormMessage className="text-xs"/>
+                        <FormMessage className="text-xs" />
                     </FormItem>
                 )}
             />
@@ -66,11 +69,11 @@ export function ContactForm() {
                     <FormItem>
                         <FormLabel className={cn(secondary.className)}>Email</FormLabel>
                         <FormControl>
-                            <Input 
-                                  autoComplete='off'
-                            className={cn(secondary.className)} placeholder="Ingresa un email..." {...field} />
+                            <Input
+                                autoComplete='off'
+                                className={cn(secondary.className)} placeholder="Ingresa un email..." {...field} />
                         </FormControl>
-                        <FormMessage className="text-xs"/>
+                        <FormMessage className="text-xs" />
                     </FormItem>
                 )}
             />
