@@ -42,7 +42,7 @@ interface FloatingPopOver extends PopoverProps, VariantProps<typeof floatingPopO
 }
 
 const floatingPopOverVariants = cva(
-  "fixed z-50",
+  "fixed z-40",
   {
     variants: {
       position: {
