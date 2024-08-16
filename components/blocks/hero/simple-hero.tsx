@@ -43,7 +43,7 @@ export default function Hero({
   return (
     <section className="bg-[url('/images/hero-section-background.webp')] bg-center bg-cover xl:min-h-screen px-6 py-20 xl:py-0 text-white flex flex-col items-start justify-center ">
       <h2 className="text-4xl xl:text-5xl font-semibold">{title}</h2>
-      <p className="text-xl xl:text-2xl mt-4">
+      <p className="text-xl xl:text-2xl mt-4 min-h-28">
         {beforeText}
         <br />
         <span
@@ -51,7 +51,7 @@ export default function Hero({
           ref={el}
         />
       </p>
-      <Button variant="outline" asChild className="mt-8 mb-4" size="xl">
+      <Button variant="outline" asChild className="mb-4" size="xl">
         <Link href={buttonUrl}>{buttonText}</Link>
       </Button>
       <GoogleReviews />
