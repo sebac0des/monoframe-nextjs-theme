@@ -5,8 +5,13 @@ import { cn } from "@/lib/utils";
 
 // Components
 import Logo from "@/components/logo";
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+import { ContactForm } from "@/components/forms/contact";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
 
 const Header = ({ className }: React.HTMLAttributes<HTMLElement>) => {
 
@@ -17,9 +22,15 @@ const Header = ({ className }: React.HTMLAttributes<HTMLElement>) => {
     )}
   >
     <Logo />
-    <Button asChild size="sm" className="text-sm">
-      <Link href="https://api.whatsapp.com/send?phone=+5491130963298">Contactar</Link>
-    </Button>
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button size="sm" className="text-sm">Contactar</Button>
+      </DialogTrigger>
+      <DialogContent>
+       <ContactForm/>
+      </DialogContent>
+    </Dialog>
+
   </header>
 }
 

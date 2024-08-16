@@ -46,7 +46,7 @@ export default async function Page() {
       imageSrc="/images/sebas-call-me.webp"
       imageAlt="@flixor"
       position="right"
-    openDelayTime={5000}
+    openDelayTime={15000}
 />
 
       {/* Show header and topbar on sticky navigation bar */}
