@@ -22,7 +22,7 @@ const Topbar = ({ message, url,className }: Props) => {
     <div
       className={cn(
         secondary.className,
-        "bg-white border-b border-primary/20 p-3 flex justify-between items-center md:text-left",
+        "bg-white border-b border-primary/20 py-2 px-4 flex justify-between items-center md:text-left",
         className
       )}
     >
