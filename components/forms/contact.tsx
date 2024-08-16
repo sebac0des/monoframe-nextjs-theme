@@ -14,7 +14,6 @@ import { Input } from "@/components/ui/input"
 import {
     Form,
     FormControl,
-    FormDescription,
     FormField,
     FormItem,
     FormLabel,
@@ -29,7 +28,6 @@ const formSchema = z.object({
 })
 
 export function ContactForm() {
-    // 1. Define your form.
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -38,10 +36,8 @@ export function ContactForm() {
         },
     })
 
-    // 2. Define a submit handler.
+    
     function onSubmit(values: z.infer<typeof formSchema>) {
-        // Do something with the form values.
-        // ✅ This will be type-safe and validated.
         console.log(values)
     }
 
@@ -57,9 +53,9 @@ export function ContactForm() {
                         <FormControl>
                             <Input
                             autoComplete='off'
-                            className={cn(secondary.className)} placeholder="Ingresa un email..." {...field} />
+                            className={cn(secondary.className)} placeholder="Ingresa tu nombre completo..." {...field} />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-xs"/>
                     </FormItem>
                 )}
             />
@@ -74,7 +70,7 @@ export function ContactForm() {
                                   autoComplete='off'
                             className={cn(secondary.className)} placeholder="Ingresa un email..." {...field} />
                         </FormControl>
-                        <FormMessage />
+                        <FormMessage className="text-xs"/>
                     </FormItem>
                 )}
             />
