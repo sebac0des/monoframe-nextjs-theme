@@ -14,7 +14,7 @@ import Typed from "typed.js";
 
 interface Props {
   title: string;
-  beforeText: string;
+  beforeAnimatedText: string;
   animatedText: string[];
   buttonText: string;
   buttonUrl: string;
@@ -22,7 +22,7 @@ interface Props {
 
 export default function Hero({
   title,
-  beforeText,
+  beforeAnimatedText,
   animatedText,
   buttonText,
   buttonUrl,
@@ -44,7 +44,7 @@ export default function Hero({
     <section className="bg-[url('/images/hero-section-background.webp')] bg-center bg-cover xl:min-h-screen px-6 py-20 xl:py-0 text-white flex flex-col items-start justify-center ">
       <h2 className="text-4xl xl:text-5xl font-semibold">{title}</h2>
       <p className="text-xl xl:text-2xl mt-4 min-h-28">
-        {beforeText}
+        {beforeAnimatedText}
         <br />
         <span
           className="font-bold text-center bg-white text-black px-1 inline-block"

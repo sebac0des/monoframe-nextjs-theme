@@ -58,7 +58,7 @@ export default async function Page() {
       {/* Show hero section */}
       <Hero
         title="¡Mira la lista de precios!"
-        beforeText="Tenemos los productos mas vendidos de cada rubro."
+        beforeAnimatedText="Tenemos los productos mas vendidos de cada rubro."
         animatedText={[
           "Estética.",
           "Masajes.",
