@@ -90,8 +90,8 @@ export default async function Page() {
         <MessageBox
         smallMessage="Hola, soy Sebas👋"
         title="Jalf es el comercio que uso para mostrar"
-        linkText="Flixor template."
-        linkUrl="https://github.com/sebascallme/flixor-official-theme"
+        linkText="Monoframe Next js template."
+        linkUrl="https://github.com/sebac0des/monoframe-nextjs-theme"
         />
       
 
