@@ -26,7 +26,7 @@ const Header = ({ className }: React.HTMLAttributes<HTMLElement>) => {
       <DialogTrigger asChild>
         <Button size="sm" className="text-sm">Contactar</Button>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className="w-11/12 m-auto">
        <ContactForm/>
       </DialogContent>
     </Dialog>
