@@ -5,13 +5,13 @@ import { cn } from "@/lib/utils";
 
 // Components
 import Logo from "@/components/logo";
+import { ContactForm } from "@/components/forms/contact";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { ContactForm } from "@/components/forms/contact";
-import { Button } from "@/components/ui/button";
 
 const Header = ({ className }: React.HTMLAttributes<HTMLElement>) => {
 
@@ -22,7 +22,8 @@ const Header = ({ className }: React.HTMLAttributes<HTMLElement>) => {
     )}
   >
     <Logo />
-    <Dialog>
+
+    <Dialog >
       <DialogTrigger asChild>
         <Button size="sm" className="text-sm">Contactar</Button>
       </DialogTrigger>
@@ -30,7 +31,6 @@ const Header = ({ className }: React.HTMLAttributes<HTMLElement>) => {
        <ContactForm/>
       </DialogContent>
     </Dialog>
-
   </header>
 }
 
