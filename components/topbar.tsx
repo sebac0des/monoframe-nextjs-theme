@@ -29,7 +29,7 @@ const Topbar = ({ message, url,className }: Props) => {
       <Button
         variant="ghost"
         asChild
-        className="p-0 w-fit h-fit bg-transparent hover:bg-transparent hover:text-accent text-xs xl:text-sm"
+        className="p-0 w-fit h-fit bg-transparent hover:bg-transparent hover:text-accent text-xs xl:text-sm transition ease-in-out delay-75 hover:scale-105 duration-150"
       >
         <Link href={url || ''}>{message}</Link>
       </Button>
