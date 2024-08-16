@@ -9,6 +9,7 @@ import { Button } from "./ui/button";
 
 // Utils
 import { cn } from "@/lib/utils";
+import { RRSS } from "./RRSS";
 
 interface Props {
   message: string;
@@ -21,17 +22,18 @@ const Topbar = ({ message, url,className }: Props) => {
     <div
       className={cn(
         secondary.className,
-        "bg-white border-b border-primary/20 py-2 text-center md:text-left",
+        "bg-white border-b border-primary/20 p-3 flex justify-between items-center md:text-left",
         className
       )}
     >
       <Button
         variant="ghost"
         asChild
-        className="h-0 bg-transparent hover:bg-transparent hover:text-inherit text-xs xl:text-sm"
+        className="p-0 w-fit h-fit bg-transparent hover:bg-transparent hover:text-accent text-xs xl:text-sm"
       >
         <Link href={url || ''}>{message}</Link>
       </Button>
+      <RRSS/>
     </div>
   );
 };
