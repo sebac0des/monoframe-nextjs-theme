@@ -13,7 +13,7 @@ import Container from "@/components/ui/container";
 // Blocks
 import { TargetAudience } from "@/components/blocks/audience/audience";
 import FAQWithVideoCarousel from "@/components/blocks/faq/faq-with-video-carousel";
-import Hero from "@/components/blocks/hero/simple-hero";
+import Hero from "@/components/blocks/hero/hero";
 import Questions from "@/components/blocks/faq/simple-faq";
 import Testimonials from "@/components/blocks/testimonials";
 
