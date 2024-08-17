@@ -1,4 +1,3 @@
-Aquí tienes un ejemplo de un README para tu template de Next.js y Shadcn:
 
 ---
 
