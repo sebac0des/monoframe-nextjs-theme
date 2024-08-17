@@ -38,19 +38,6 @@ To get started with MonoFrame, follow these steps:
     ```
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see your template in action.
 
-### Roadmap
-
-As this template is still in development, more features and components will be added over time, including:
-
-- Expanded Component Library
-- Additional Page Templates
-- Enhanced Customization Options
-- SEO Optimization Tools
-
-### Contributions
-
-Contributions are welcome! If you have ideas, suggestions, or bug reports, feel free to open an issue or submit a pull request. Let's build something awesome together.
-
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
