@@ -42,25 +42,6 @@ To get started with MonoFrame, follow these steps:
     ```
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see your template in action.
 
-### Folder Structure
-
-monoframe/
-│
-├── app/
-├── components/
-│   ├── ui/
-│   │   └── [Shadcn components folder]
-│   ├── blocks/
-│   │   └── [Block components composed of ui components]
-│   └── [Theme and navigation components]
-├── data/
-│   └── [JSON data for the entire project]
-├── services/
-│   └── [Service layer for API calls, data fetching, etc.]
-├── types/
-|    └── [Typescript theme interfaces]
-    
-
 ### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
