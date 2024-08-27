@@ -28,7 +28,8 @@ export interface SocialSettings {
     instagram: string;
     facebook: string;
     tiktok: string;
-}
+    google_maps:string
+  }
 
 export interface Testimonial {
   id: number;
