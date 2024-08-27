@@ -1,11 +1,11 @@
-export interface HomepageFormSchema {
-  fullname: string;
-  email: string;
-  phone_number?: string;
-  message?: string;
+export interface VideoSliderItem {
+  id: number;
+  posterUrl: string;
+  videoUrl: string;
+  title: string;
 }
 
-export interface VideoSliderItem {
+export interface QuestionVideoItem {
   id: number;
   posterUrl: string;
   videoUrl: string;
@@ -17,18 +17,6 @@ export interface AudienceItem {
     iconImageUrl: string,
     title: string,
     desc: string,
-}
-
-export interface Settings {
-  social: SocialSettings
-}
-
-export interface SocialSettings {
-    username: string;
-    instagram: string;
-    facebook: string;
-    tiktok: string;
-    google_maps:string
   }
 
 export interface Testimonial {
@@ -51,9 +39,14 @@ export interface QuestionItem {
   content: string;
 }
 
-export interface QuestionVideoItem {
-  id: number;
-  posterUrl: string;
-  videoUrl: string;
-  title: string;
+export interface Settings {
+  social: SocialSettings
+}
+
+export interface SocialSettings {
+    username: string;
+    instagram: string;
+    facebook: string;
+    tiktok: string;
+    google_maps:string
 }
