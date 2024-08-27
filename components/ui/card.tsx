@@ -5,17 +5,12 @@ import { secondary } from "@/app/fonts";
 
 // Components
 import { Button } from "@/components/ui/button";
-import { Video, VideoProps } from "@/components/ui/video";
 
 // Next js
 import Link from "next/link";
-import Image from "next/image";
 
 // Utils
 import { cn } from "@/lib/utils";
-
-// Types
-import {ImageProps} from 'next/image'
 
 interface CardButton extends React.ComponentProps<typeof Button> {
   buttonUrl:string
@@ -27,32 +22,18 @@ className={cn("rounded-md relative overflow-hidden",className)}
 />)
 Card.displayName = 'Card'
 
-const CardImage = React.forwardRef<
-  HTMLImageElement,
-  ImageProps
->(({ className, ...props }, ref) => (
-  <Image
-    ref={ref}
-    width={1080}
-    height={1080}
-    className={className}
-    {...props}
-  />
-))
-CardImage.displayName = "CardImage"
-
 const CardContent = React.forwardRef<HTMLDivElement,React.HTMLAttributes<HTMLDivElement>>(({className,...props},ref)=><div
 ref={ref}
-className={cn("absolute bottom-0 left-0 p-4 text-white",className)}
+className="text-white absolute bottom-3 left-3 z-50"
 {...props}/>)
 CardContent.displayName = 'CardContent'
 
-const CardTitle = React.forwardRef<HTMLHeadingElement,React.HTMLAttributes<HTMLHeadingElement>>(({className,...props},ref)=><h3 ref={ref} className={cn("text-2xl font-medium tracking-wider",className)} {...props}/>)
+const CardTitle = React.forwardRef<HTMLHeadingElement,React.HTMLAttributes<HTMLHeadingElement>>(({className,...props},ref)=><h3 ref={ref} className="text-xl lg:text-lg font-medium tracking-wider" {...props}/>)
 CardTitle.displayName = 'CardTitle'
 
 const CardDescription = React.forwardRef<HTMLSpanElement,React.HTMLAttributes<HTMLSpanElement>>(({className,...props},ref)=> <span
 ref={ref} 
-className={cn(secondary.className,'text-sm md:text-base',className)}
+className={cn(secondary.className,'text-sm',className)}
 {...props}
 />) 
 CardDescription.displayName = 'CardDescription'
@@ -64,11 +45,10 @@ CardButton.displayName = 'CardButton'
 
 
 const CardOverlay = React.forwardRef<HTMLDivElement,React.HTMLAttributes<HTMLDivElement>>(({className,...props},ref)=><div ref={ref}
-className="block bg-black/40 absolute top-0 left-0 w-full h-full"
+className="block bg-black/40 absolute top-0 left-0 w-full h-full z-10"
 {...props}/>)
 CardOverlay.displayName = 'CardOverlay'
 
-const CardVideo = React.forwardRef<React.HTMLAttributes<HTMLVideoElement>,VideoProps>(({...props})=><Video {...props}/>)
-CardVideo.displayName = 'CardVideo'
 
-export {Card,CardContent,CardTitle,CardDescription,CardButton,CardImage,CardVideo,CardOverlay}
+
+export {Card,CardContent,CardTitle,CardDescription,CardButton,CardOverlay}

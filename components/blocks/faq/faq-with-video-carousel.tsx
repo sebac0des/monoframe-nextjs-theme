@@ -1,7 +1,7 @@
 // Components
 import { SectionHeading } from "@/components/ui/section-heading";
 
-import { Card, CardTitle, CardVideo, CardContent } from '@/components/ui/card'
+import { Card, CardTitle, CardContent, CardOverlay, CardDescription } from '@/components/ui/card'
 import {
   Carousel,
   CarouselContent,
@@ -28,8 +28,8 @@ export default function FAQWithVideoCarousel({
   return (
     <div className="flex flex-col gap-5 lg:gap-10">
       <SectionHeading
-      title={sectionTitle}
-      smallText={sectionSmallText}
+        title={sectionTitle}
+        smallText={sectionSmallText}
       />
       <Carousel
         opts={{
@@ -39,17 +39,18 @@ export default function FAQWithVideoCarousel({
         className="w-full"
       >
         <VideoCarouselIndicators />
-        <CarouselContent className="gap-3">
+        <CarouselContent>
           {data.map((item) => (
-            <CarouselItem key={item.id} className="md:basis-1/3 xl:basis-1/5 rounded-lg">
+            <CarouselItem key={item.id} className="md:basis-1/3 xl:basis-1/4 rounded-lg">
               <Card>
-                <CardVideo
-                  playOnHoverMode
-                  poster={item.posterUrl}
-                  src={item.videoUrl} />
+                <video 
+                src={item.videoUrl}
+                ></video>
                 <CardContent>
-                  <CardTitle className="text-base md:text-sm">{item.title}</CardTitle>
+                <CardTitle>{item.title}</CardTitle>                
+                <CardDescription>Dura 8 minutos.</CardDescription>
                 </CardContent>
+                <CardOverlay/>
               </Card>
             </CarouselItem>
 
