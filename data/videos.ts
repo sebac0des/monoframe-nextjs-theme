@@ -3,27 +3,28 @@ import { VideoItem } from "@/types/index";
 const business_questions: VideoItem[] = [
   {
     id: 1,
-    videoUrl: "/videos/test-video.mp4",
-    title: "¿Hacen envios?",
+    videoUrl: "",
+    title: "Lista de precios",
+    posterUrl:"Como ver la lista de precios 💵"
   },
   {
     id: 2,
-    videoUrl: "/videos/test-video.mp4",
+    videoUrl: "",
     title: "¿Hacen envios?",
   },
   {
     id: 3,
-    videoUrl: "/videos/test-video.mp4",
+    videoUrl: "",
     title: "¿Hacen envios?",
   },
   {
     id: 4,
-    videoUrl: "/videos/test-video.mp4",
+    videoUrl: "",
     title: "¿Hacen envios?",
   },
   {
     id: 5,
-    videoUrl: "/videos/test-video.mp4",
+    videoUrl: "",
     title: "¿Hacen envios?",
   },
 ];
