@@ -1,6 +1,6 @@
-import { VideoCardItem } from "@/types/index";
+import { VideoItem } from "@/types/index";
 
-const business_questions: VideoCardItem[] = [
+const business_questions: VideoItem[] = [
   {
     id: 1,
     videoUrl: "/videos/test-video.mp4",
