@@ -10,13 +10,16 @@ import { Button } from "@/components/ui/button";
 // Icons
 import { Star } from "lucide-react";
 
+// Data
+import settings from '@/data/settings'
+
 export default function GoogleReviews() {
   return (
     <Button
       asChild
       className="p-0 flex justify-star gap-2 items-center bg-transparent hover:bg-transparent"
     >
-      <Link target="_blank" href="https://bit.ly/480XRdq">
+      <Link target="_blank" href={settings.social.google_maps}>
         <ul className="flex gap-0.5 text-xs">
           {Array.from({ length: 5 }).map((_, i) => (
             <li key={i}>
