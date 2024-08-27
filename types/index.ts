@@ -1,10 +1,3 @@
-export interface VideoSliderItem {
-  id: number;
-  posterUrl: string;
-  videoUrl: string;
-  title: string;
-}
-
 export interface QuestionVideoItem {
   id: number;
   posterUrl: string;

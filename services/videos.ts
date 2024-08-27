@@ -2,12 +2,12 @@
 import { cache } from "react";
 
 // Types
-import { VideoSliderItem } from "@/types";
+import { QuestionVideoItem } from "@/types";
 
 // Fake data
-import slider_videos from '@/data/videos'
+import {business_questions} from '@/data/videos'
 
 
 // Get all video in slider content from fake API service
-export const getSliderVideos = cache(async ():Promise<VideoSliderItem[]> =>  slider_videos);
+export const getBusinessVideos = cache(async ():Promise<QuestionVideoItem[]> =>  business_questions);
 

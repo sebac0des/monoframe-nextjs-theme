@@ -20,13 +20,13 @@ import Testimonials from "@/components/blocks/testimonials";
 // Services
 import { getTestimonials } from "@/services/testimonials";
 import { getHomepageQuestions } from "@/services/faq";
-import { getSliderVideos } from '@/services/videos'
+import { getBusinessVideos } from '@/services/videos'
 import { getBusinessBenefits } from '@/services/benefits'
 import { getBusinessAudience } from '@/services/audience'
 
 export default async function Page() {
 
-  const slider_videos = await getSliderVideos()
+  const slider_videos = await getBusinessVideos()
   const benefits = await getBusinessBenefits()
   const testimonials = await getTestimonials()
   const faq = await getHomepageQuestions()
