@@ -14,20 +14,27 @@ const containerVariants = cva(
       variant: {
         default: '',
       },
+      padding:{
+        "1":'px-2 py-4',
+        "2":'px-4 py-8',
+        "3":'px-8 py-16'
+      },
       align: {
         left: 'content-start',
         center: 'content-center',
         right: 'content-end'
       },
       size: {
-        "1": "max-w-md",
-        "2": "max-w-2xl",
-        "3": "max-w-4xl",
-        "4": "max-w-6xl",
-        "5": 'max-w-7xl'
+        "1": "max-w-screen-sm",
+        "2": "max-w-screen-md",
+        "3": "max-w-6xl",
+        "4": "max-w-screen-lg",
+        "5": "max-w-screen-xl",
+        "6":"max-w-screen-2xl"
       },
     },
     defaultVariants: {
+      padding:'1',
       align: 'center',
       variant: "default",
       size: "4",
@@ -35,9 +42,9 @@ const containerVariants = cva(
   }
 );
 
-const Container = React.forwardRef<HTMLDivElement, ContainerProps>(({ align, size, variant, className, ...props }, ref) => <div
+const Container = React.forwardRef<HTMLDivElement, ContainerProps>(({ align, padding,size, variant, className, ...props }, ref) => <div
   ref={ref}
-  className={cn(containerVariants({ size, variant, align }), className)}
+  className={cn(containerVariants({ size, variant, align,padding }), className)}
   {...props} />)
 Container.displayName = 'Container'
 

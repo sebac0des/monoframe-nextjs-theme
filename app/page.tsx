@@ -46,7 +46,7 @@ export default async function Page() {
       imageSrc="/images/sebas-call-me.webp"
       imageAlt="@flixor"
       position="right"
-    openDelayTime={15000}
+      openDelayTime={15000}
 />
 
       {/* Show header and topbar on sticky navigation bar */}
@@ -70,7 +70,7 @@ export default async function Page() {
         buttonUrl="#"
       />
 
-      <Container className="px-5 py-10 flex flex-col gap-20" size="5">
+      <Container className="flex flex-col gap-20 py-20" size="3">
 
         {/* Show a slider with frequently asked questions about your business in video */}
         <FAQWithVideoCarousel
