@@ -71,7 +71,8 @@ export default function FAQWithVideoCarousel({
                 <video
                   ref={ref}
                   src={item.videoUrl}
-                ></video>
+                  poster={item.posterUrl}
+></video>
                 <CardContent>
                 
                   <CardTitle>{item.title}</CardTitle>
