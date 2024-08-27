@@ -26,7 +26,7 @@ export default function FAQWithVideoCarousel({
   data,
 }: Props) {
   return (
-    <div className="flex flex-col gap-5 lg:gap-10">
+    <div className="space-y-8">
       <SectionHeading
         title={sectionTitle}
         smallText={sectionSmallText}
