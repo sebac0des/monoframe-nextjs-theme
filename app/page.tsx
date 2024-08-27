@@ -70,7 +70,7 @@ export default async function Page() {
         buttonUrl="#"
       />
 
-      <Container className="flex flex-col gap-20 py-20" size="3">
+      <Container className="flex flex-col gap-20" padding="2" size="3">
 
         {/* Show a slider with frequently asked questions about your business in video */}
         <FAQWithVideoCarousel
