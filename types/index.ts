@@ -1,8 +1,9 @@
 export interface VideoCardItem {
   id: number;
-  posterUrl: string;
   videoUrl: string;
   title: string;
+  short_desc?:string
+  posterUrl?: string;
 }
 
 export interface AudienceItem {

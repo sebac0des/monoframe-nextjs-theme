@@ -72,12 +72,11 @@ export default function FAQWithVideoCarousel({
                 playsInline
                   ref={ref}
                   src={item.videoUrl}
-                  className="z-50"
                 ></video>
                 <CardContent>
                 
                   <CardTitle>{item.title}</CardTitle>
-                  <CardDescription>Dura 8 minutos.</CardDescription>
+                  <CardDescription>{item.short_desc}</CardDescription>
                 </CardContent>
                 <CardOverlay />
               </Card>
