@@ -69,7 +69,6 @@ export default function FAQWithVideoCarousel({
                   <PlayIcon className="w-4 h-4 fill-white" />
                 </Button>
                 <video
-                playsInline
                   ref={ref}
                   src={item.videoUrl}
                 ></video>
