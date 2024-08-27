@@ -72,7 +72,6 @@ export default function FAQWithVideoCarousel({
                   ref={ref}
                   src={item.videoUrl}
                   poster={item.posterUrl}
-                  className="min-h-screen"
                 ></video>
                 <CardContent>
 
