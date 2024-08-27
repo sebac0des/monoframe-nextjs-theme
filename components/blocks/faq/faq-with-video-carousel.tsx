@@ -14,7 +14,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 
 // Types
-import { QuestionVideoItem } from "@/types";
+import { VideoCardItem } from "@/types";
 
 // Icons
 import { PlayIcon } from "lucide-react";
@@ -23,7 +23,7 @@ import { useRef } from "react";
 interface Props {
   sectionSmallText: string;
   sectionTitle: string;
-  data: QuestionVideoItem[];
+  data: VideoCardItem[];
 }
 
 export default function FAQWithVideoCarousel({

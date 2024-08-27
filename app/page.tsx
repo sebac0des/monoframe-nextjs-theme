@@ -26,7 +26,7 @@ import { getBusinessAudience } from '@/services/audience'
 
 export default async function Page() {
 
-  const slider_videos = await getBusinessVideos()
+  const business_videos = await getBusinessVideos()
   const benefits = await getBusinessBenefits()
   const testimonials = await getTestimonials()
   const faq = await getHomepageQuestions()
@@ -76,7 +76,7 @@ export default async function Page() {
         <FAQWithVideoCarousel
           sectionSmallText="¿Tienes dudas o preguntas?"
           sectionTitle="Te las aclaramos en tu formato favorito, en video ✨"
-          data={slider_videos}
+          data={business_videos}
         />
 
         {/* Show target audience section, use for segment your business audience */}

@@ -1,4 +1,4 @@
-export interface QuestionVideoItem {
+export interface VideoCardItem {
   id: number;
   posterUrl: string;
   videoUrl: string;
