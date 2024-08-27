@@ -38,7 +38,7 @@ export default function FAQWithVideoCarousel({
     if (ref.current) {
       ref.current.play()
       ref.current.requestFullscreen();
-      
+
     }
   };
 
@@ -64,17 +64,18 @@ export default function FAQWithVideoCarousel({
             <CarouselItem key={item.id} className="md:basis-1/3 xl:basis-1/4 rounded-lg">
               <Card>
                 <Button
-                onClick={handlePlayVideo}
-                className="scale-125 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full z-50 shadow-black shadow-lg" size="icon">
+                  onClick={handlePlayVideo}
+                  className="scale-125 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full z-50 shadow-black shadow-lg" size="icon">
                   <PlayIcon className="w-4 h-4 fill-white" />
                 </Button>
                 <video
                   ref={ref}
                   src={item.videoUrl}
                   poster={item.posterUrl}
-></video>
+                  className="min-h-screen"
+                ></video>
                 <CardContent>
-                
+
                   <CardTitle>{item.title}</CardTitle>
                   <CardDescription>{item.short_desc}</CardDescription>
                 </CardContent>
